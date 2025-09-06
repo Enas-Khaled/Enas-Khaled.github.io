@@ -1,0 +1,19 @@
+[
+	{
+	  "title": "Employee Integration Flow",
+	  "tech": "Oracle Integration Cloud (OIC)",
+	  "description": "Integration to sync employee data between Oracle Fusion HCM and an external REST API.",
+	  "repoUrl": "https://github.com/Enas-Khaled/OIC-Employee-Integration",
+	  "demoUrl": "https://youtu.be/YOUR_VIDEO_LINK",
+	  "image": "assets/oic-project.png"
+	},
+	{
+	  "title": "Doctor Appointments Made Easy",
+	  "tech": "Oracle APEX + Workflows",
+	  "description": "Built an appointment booking system with automation workflows.",
+	  "repoUrl": "https://github.com/Enas-Khaled/Doctor-Appointments",
+	  "demoUrl": "https://youtu.be/YOUR_VIDEO_LINK",
+	  "image": "assets/apex-project.png"
+	}
+  ]
+  
