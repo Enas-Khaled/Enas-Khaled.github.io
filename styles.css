@@ -50,4 +50,10 @@ body {
 	max-width: 100%;
 	border-radius: 8px;
   }
+  footer {
+	background: #2c3e50;
+	color: white;
+	padding: 20px;
+	text-align: center;
+  }
   
