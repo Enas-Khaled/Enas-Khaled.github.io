@@ -14,14 +14,11 @@ body {
   font-size: 16px;
 }
 
-/* Container */
 .container {
   max-width: 1000px;
-  margin: 0 auto;         /* centers the container horizontally */
+  margin: 0 auto;   /* centers the block */
   padding: 20px;
-  text-align: center;     /* centers text inside */
 }
-
 
 
 /* Header */
