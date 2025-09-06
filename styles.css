@@ -21,6 +21,12 @@ body {
   padding: 20px;
 }
 
+/* Center only titles and headers */
+header, section h3 {
+  text-align: center;
+}
+
+
 /* Header */
 header {
   text-align: center;
