@@ -17,14 +17,11 @@ body {
 /* Container */
 .container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto;         /* centers the container horizontally */
   padding: 20px;
+  text-align: center;     /* centers text inside */
 }
 
-/* Center only titles and headers */
-header, section h3 {
-  text-align: center;
-}
 
 
 /* Header */
