@@ -209,3 +209,10 @@ section {
   border-color: #58a6ff;
 }
 
+/*footer*/
+footer {
+  max-width: 1000px;
+  margin: 0 auto;   /* centers the block */
+  padding: 20px;
+}
+
