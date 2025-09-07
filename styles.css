@@ -105,6 +105,7 @@ section h3 {
   display: flex;
   gap: 15px;
   align-items: center;
+  color: #161b22;
 }
 /* Header Social Icons */
 .social-links-top a {
