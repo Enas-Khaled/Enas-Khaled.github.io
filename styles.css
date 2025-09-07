@@ -100,20 +100,7 @@ section h3 {
   margin: 0 auto;
   padding: 0 20px;
 }
-/* CV Button */
-.cv-button {
-  background: #58a6ff;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: background 0.3s ease;
-}
 
-.cv-button:hover {
-  background: #1f6feb;
-}
 .social-links-top {
   display: flex;
   gap: 15px;
@@ -131,7 +118,20 @@ section h3 {
   color: #f78166;
   transform: translateY(-3px);
 }
+/* CV Button */
+.cv-button {
+  background: #58a6ff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
 
+.cv-button:hover {
+  background: #1f6feb;
+}
 
 /* Sections */
 section {
