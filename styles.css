@@ -318,7 +318,7 @@ footer {
 }
 
 /* Responsive: Mobile */
-media (max-width: 768px) {
+@media (max-width: 768px) {
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -332,19 +332,15 @@ media (max-width: 768px) {
     border-top: 1px solid #30363d;
   }
 
-.nav-menu.show {
+  .nav-menu.show {
     display: flex;
   }
 
   .menu-toggle {
-    display: block; /* show toggle on small screens */
+    display: block;
   }
- .header-bottom {
+
+  .header-bottom {
     flex-wrap: nowrap;
-  }
-  /* Stack header items vertically */
-  .header-top {
-    flex-wrap: nowrap;
-    justify-content: space-between;
   }
 }
