@@ -118,32 +118,15 @@ section h3 {
   transform: translateY(-3px);
 }
 /* CV Button */
-/*.cv-button {
-  margin-left: 15px;
-  padding: 6px 14px;
-  font-size: 0.95rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #58a6ff;
-  border: 1px solid #58a6ff;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}*/
 .cv-button {
-  /*background: #58a6ff;*/
-  color: #58a6ff;
+  background: #58a6ff;
+  color: white;
   padding: 6px 12px;
   border-radius: 6px;
   text-decoration: none;
   font-size: 0.9rem;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
 }
-
-/*.cv-button:hover {
-  background: #58a6ff;
-  color: #0d1117;
-  transform: translateY(-2px);
-}*/
 
 .cv-button:hover {
   background: #1f6feb;
