@@ -28,6 +28,11 @@ header {
   background: linear-gradient(145deg, #0d1117, #161b22);
   border-bottom: 1px solid #30363d;
 }
+/* Centered Name + Tagline */
+.header-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 .header-top {
   display: flex;
@@ -46,16 +51,21 @@ header h1 {
   background: linear-gradient(90deg, #58a6ff, #f78166);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
 }
 
 header p {
-  margin-top: 10px;
   font-size: 1.2rem;
   color: #c9d1d9;
 }
+/* Navigation + Social layout */
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-
-/* Navigation Menu */
+/* Navigation menu */
 .nav-menu {
   display: flex;
   gap: 20px;
@@ -63,15 +73,13 @@ header p {
 
 .nav-menu a {
   text-decoration: none;
-  font-weight: bold;
   color: #c9d1d9;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-  padding-bottom: 3px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-menu a:hover {
   color: #58a6ff;
-  border-bottom: 2px solid #58a6ff;
 }
 
 
@@ -92,7 +100,11 @@ section h3 {
   margin: 0 auto;
   padding: 0 20px;
 }
-
+.social-links-top {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
 /* Header Social Icons */
 .social-links-top a {
   margin-left: 15px;
@@ -107,21 +119,17 @@ section h3 {
 }
 /* CV Button */
 .cv-button {
-  margin-left: 15px;
-  padding: 6px 14px;
-  font-size: 0.95rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #58a6ff;
-  border: 1px solid #58a6ff;
+  background: #58a6ff;
+  color: white;
+  padding: 6px 12px;
   border-radius: 6px;
-  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
 }
 
 .cv-button:hover {
-  background: #58a6ff;
-  color: #0d1117;
-  transform: translateY(-2px);
+  background: #1f6feb;
 }
 
 /* Sections */
@@ -310,28 +318,30 @@ footer {
 }
 
 /* Responsive: Mobile */
-@media (max-width: 768px) {
+media (max-width: 768px) {
   .nav-menu {
-    display: none; /* hidden by default on mobile */
+    display: none;
     flex-direction: column;
     gap: 15px;
     background: #161b22;
     position: absolute;
-    top: 70px;
+    top: 120px;
     left: 0;
     right: 0;
     padding: 20px;
     border-top: 1px solid #30363d;
   }
 
-  .nav-menu.show {
-    display: flex; /* visible when toggled */
+.nav-menu.show {
+    display: flex;
   }
 
   .menu-toggle {
     display: block; /* show toggle on small screens */
   }
-
+ .header-bottom {
+    flex-wrap: nowrap;
+  }
   /* Stack header items vertically */
   .header-top {
     flex-wrap: nowrap;
