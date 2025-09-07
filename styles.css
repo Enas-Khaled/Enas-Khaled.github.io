@@ -69,6 +69,46 @@ section h3 {
   padding-left: 10px;
   color: #ffffff;
 }
+/* Header Layout */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Social Icons */
+.social-links-top a {
+  margin-left: 15px;
+  font-size: 1.5rem;
+  color: #58a6ff;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links-top a:hover {
+  color: #f78166;
+  transform: translateY(-3px);
+}
+/* CV Button */
+.cv-button {
+  margin-left: 15px;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #58a6ff;
+  border: 1px solid #58a6ff;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.cv-button:hover {
+  background: #58a6ff;
+  color: #0d1117;
+  transform: translateY(-2px);
+}
 
 /* Sections */
 section {
@@ -210,7 +250,38 @@ section {
 }
 
 /*footer*/
+/* Footer */
 footer {
-  margin: 0 auto;   /* centers the block */
+  margin-top: 40px;
+  padding: 20px 15px;
+  background: #0d1117;
+  border-top: 1px solid #30363d;
+  text-align: center;
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Social Icons Row */
+.social-links {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-links a {
+  font-size: 1.6rem;
+  color: #58a6ff;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #f78166;
+  transform: translateY(-3px);
 }
 
