@@ -29,6 +29,17 @@ header {
   border-bottom: 1px solid #30363d;
 }
 
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  flex-wrap: wrap; /* helps on smaller screens */
+}
+
+
 header h1 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -44,22 +55,25 @@ header p {
 }
 
 
-/* Navigation */
-nav {
-  margin-top: 20px;
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  gap: 20px;
 }
 
-nav a {
-  color: #58a6ff;
+.nav-menu a {
   text-decoration: none;
-  margin: 0 15px;
   font-weight: bold;
-  transition: color 0.3s ease;
+  color: #c9d1d9;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 3px;
 }
 
-nav a:hover {
-  color: #1f6feb;
+.nav-menu a:hover {
+  color: #58a6ff;
+  border-bottom: 2px solid #58a6ff;
 }
+
 
 /* Section Titles */
 section h3 {
@@ -285,3 +299,42 @@ footer {
   transform: translateY(-3px);
 }
 
+/* Hide toggle by default (desktop) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #58a6ff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* hidden by default on mobile */
+    flex-direction: column;
+    gap: 15px;
+    background: #161b22;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    border-top: 1px solid #30363d;
+  }
+
+  .nav-menu.show {
+    display: flex; /* visible when toggled */
+  }
+
+  .menu-toggle {
+    display: block; /* show toggle on small screens */
+  }
+
+  /* Stack header items vertically */
+  .header-top {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
