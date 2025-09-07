@@ -307,7 +307,7 @@ footer {
   transform: translateY(-3px);
 }
 
-/* Hide toggle by default (desktop) */
+/* Mobile */
 .menu-toggle {
   display: none;
   background: none;
@@ -317,7 +317,6 @@ footer {
   cursor: pointer;
 }
 
-/* Responsive: Mobile */
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
