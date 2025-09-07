@@ -28,6 +28,9 @@
       <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="assets/Enas-Khaled-CV.pdf" class="cv-button" download>📄 CV</a>
     </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
   </div>
 
   <p>Aspiring Oracle Fusion Technical Consultant | OIC • VBCS • OTBI • BI Publisher</p>
@@ -112,6 +115,15 @@
 
 
   <script src="script.js"></script>
+    <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+</script>
+
   </div>
 </body>
 </html>
