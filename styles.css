@@ -316,7 +316,7 @@ footer {
   font-size: 1.8rem;
   cursor: pointer;
 }
-/*
+
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
@@ -342,4 +342,4 @@ footer {
   .header-bottom {
     flex-wrap: nowrap;
   }
-}*/
+}
