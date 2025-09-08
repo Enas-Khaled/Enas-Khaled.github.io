@@ -121,18 +121,23 @@ section h3 {
 }
 /* CV Button */
 .cv-button {
-  background: #58a6ff;
-  color: #161b22;
-  padding: 6px 12px;
-  border-radius: 6px;
+  background: linear-gradient(90deg, #58a6ff, #1f6feb);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
   text-decoration: none;
-  font-size: 0.9rem;
-  transition: background 0.3s ease;
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.6);
+  transition: all 0.3s ease;
 }
 
 .cv-button:hover {
-  background: #1f6feb;
+  background: linear-gradient(90deg, #1f6feb, #58a6ff);
+  box-shadow: 0 0 18px rgba(88, 166, 255, 0.9);
+  transform: scale(1.05);
 }
+
 
 /* Sections */
 section {
