@@ -327,28 +327,22 @@ footer {
 
 /* Mobile view */
 @media (max-width: 768px) {
-  nav {
-    display: none;
+  .nav-menu {
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
     background: #161b22;
     position: absolute;
-    top: 60px; /* below header */
+    top: 60px;  /* pushes below header */
     left: 0;
     width: 100%;
     padding: 10px;
     border-bottom: 1px solid #30363d;
   }
 
-  nav.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav a {
+  .nav-menu a {
     margin: 10px 0;
-    text-align: left;
+    width: 100%;
   }
 }
+
