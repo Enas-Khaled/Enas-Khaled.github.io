@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <title>Enas Khaled – Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -17,9 +20,19 @@
     <h1>Enas Khaled</h1>
     <p>Oracle Fusion Technical Consultant | OIC • VBCS • OTBI • BI Publisher</p>
   </div>
-
+  
   <!-- Navigation + Social -->
   <div class="header-bottom">
+    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
     <!-- Navigation Menu -->
     <nav class="nav-menu">
       <a href="#about">About</a>
@@ -34,8 +47,7 @@
       <a href="https://www.linkedin.com/in/enas-khaled/" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="assets/Enas-Khaled-CV.pdf" class="cv-button" download>📄 CV</a>
     </div>
-  <!-- Mobile Menu Button -->
-    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+
    
   </div>
 </header>
@@ -122,11 +134,20 @@
 
   <script src="script.js"></script>
     <script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('.nav-menu');
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector("nav");
+  const navLinks = document.querySelectorAll("nav a");
 
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
+  // Toggle menu on button click
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+
+  // Close menu when a link is clicked (mobile)
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("active");
+    });
   });
 </script>
 
