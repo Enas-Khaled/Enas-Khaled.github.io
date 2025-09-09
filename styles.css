@@ -314,35 +314,40 @@ footer {
   transform: translateY(-3px);
 }
 
+
 /* Mobile */
-/* Hide menu toggle on desktop */
 .menu-toggle {
   display: none;
   background: none;
   border: none;
+  color: #58a6ff;
   font-size: 1.8rem;
-  color: #c9d1d9;
   cursor: pointer;
 }
 
-/* Mobile view */
 @media (max-width: 768px) {
   .nav-menu {
-    display: flex;
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
+    gap: 15px;
     background: #161b22;
     position: absolute;
-    top: 60px;  /* pushes below header */
+    top: 120px;
     left: 0;
-    width: 100%;
-    padding: 10px;
-    border-bottom: 1px solid #30363d;
+    right: 0;
+    padding: 20px;
+    border-top: 1px solid #30363d;
   }
 
-  .nav-menu a {
-    margin: 10px 0;
-    width: 100%;
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-bottom {
+    flex-wrap: nowrap;
   }
 }
-
