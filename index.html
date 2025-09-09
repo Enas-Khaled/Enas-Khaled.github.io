@@ -126,21 +126,22 @@
 
   <script src="script.js"></script>
     <script>
-  const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav-menu");  // use class selector
+ const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-menu a");
 
 // Toggle menu on button click
 menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("show"); // changed from 'active' → 'show'
+  nav.classList.toggle("show");
 });
 
-// Close menu when a link is clicked (mobile)
+// Close menu when a link is clicked
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
     nav.classList.remove("show");
   });
 });
+
 
 </script>
 
