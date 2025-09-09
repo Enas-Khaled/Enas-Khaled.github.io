@@ -327,27 +327,38 @@ footer {
 
 @media (max-width: 768px) {
   .nav-menu {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 15px;
     background: #161b22;
     position: absolute;
-    top: 120px;
+    top: 60px;   /* sits right below header */
     left: 0;
     right: 0;
-    padding: 20px;
     border-top: 1px solid #30363d;
+    z-index: 1000;
+
+    /* smooth animation */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+    padding: 0 20px;
   }
 
   .nav-menu.show {
-    display: flex;
+    max-height: 300px; /* enough for menu items */
+    opacity: 1;
+    padding: 20px;
   }
 
   .menu-toggle {
     display: block;
+    cursor: pointer;
   }
 
   .header-bottom {
     flex-wrap: nowrap;
+    position: relative;
   }
 }
