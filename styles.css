@@ -315,30 +315,31 @@ footer {
 }
 
 /* Mobile */
+/* Hide menu toggle on desktop */
 .menu-toggle {
   display: none;
   background: none;
   border: none;
-  color: #58a6ff;
   font-size: 1.8rem;
+  color: #c9d1d9;
   cursor: pointer;
 }
 
+/* Mobile view */
 @media (max-width: 768px) {
-  .nav-menu {
+  nav {
     display: none;
     flex-direction: column;
-    gap: 15px;
     background: #161b22;
     position: absolute;
-    top: 120px;
+    top: 60px; /* below header */
     left: 0;
-    right: 0;
-    padding: 20px;
-    border-top: 1px solid #30363d;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #30363d;
   }
 
-  .nav-menu.show {
+  nav.active {
     display: flex;
   }
 
@@ -346,7 +347,8 @@ footer {
     display: block;
   }
 
-  .header-bottom {
-    flex-wrap: nowrap;
+  nav a {
+    margin: 10px 0;
+    text-align: left;
   }
 }
