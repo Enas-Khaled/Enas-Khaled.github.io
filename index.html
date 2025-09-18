@@ -30,6 +30,7 @@
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
     </nav>
  
     <!-- Social & CV -->
@@ -111,6 +112,39 @@
 
   </div>
 </section>
+ <section id="certificates">
+  <h2>Certificates</h2>
+  <div class="cert-grid">
+    <!-- Certificate 1 -->
+    <div class="cert-card" onclick="openModal(0)">
+      <img src="assets/oracle-logo.png" alt="Oracle Logo">
+      <h3>Oracle Fusion Technical Consultant Training</h3>
+      <p>Click to View</p>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="cert-card" onclick="openModal(1)">
+      <img src="assets/oic-logo.png" alt="OIC Logo">
+      <h3>Oracle Integration Cloud (OIC)</h3>
+      <p>Click to View</p>
+    </div>
+
+    <!-- Certificate 3 -->
+    <div class="cert-card" onclick="openModal(2)">
+      <img src="assets/vbcs-logo.png" alt="VBCS Logo">
+      <h3>Visual Builder Cloud Service (VBCS)</h3>
+      <p>Click to View</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="certModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="certImage">
+  <a class="prev" onclick="changeCert(-1)">&#10094;</a>
+  <a class="next" onclick="changeCert(1)">&#10095;</a>
+</div>
 
 <footer>
   <div class="footer-content">
