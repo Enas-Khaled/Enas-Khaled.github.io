@@ -143,43 +143,62 @@ section h3 {
 section {
   margin: 40px 0;
 }
-/* Divider between summary & education */
+
+/* Divider */
 .about-divider {
   border: none;
   height: 1px;
-  background: linear-gradient(to right, transparent, #ddd, transparent);
-  margin: 24px 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  margin: 26px 0;
 }
 
 /* Education block */
 .education {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 /* Education title */
 .education h4 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #222;
+  color: #f5f5f5;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   margin-bottom: 6px;
 }
+
+/* Graduation cap icon */
+.education h4::before {
+  content: "🎓";
+  font-size: 1.2rem;
+}
+
 /* Education text */
 .education p {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #555;
+  color: #cfcfcf;
   margin: 0;
 }
 
-/* University name emphasis */
+/* Degree emphasis */
 .education strong {
-  color: #000;
+  color: #ffffff;
   font-weight: 600;
+}
+
+/* Optional accent line (Oracle red) */
+.education h4 {
+  border-left: 4px solid #c74634;
+  padding-left: 12px;
 }
 /* Skills Grid */
 .skills-grid {
