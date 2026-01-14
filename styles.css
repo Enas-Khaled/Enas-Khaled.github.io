@@ -143,7 +143,44 @@ section h3 {
 section {
   margin: 40px 0;
 }
+/* Divider between summary & education */
+.about-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ddd, transparent);
+  margin: 24px 0;
+}
 
+/* Education block */
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Education title */
+.education h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+/* Education text */
+.education p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* University name emphasis */
+.education strong {
+  color: #000;
+  font-weight: 600;
+}
 /* Skills Grid */
 .skills-grid {
   display: grid;
@@ -326,6 +363,13 @@ footer {
 }
 
 @media (max-width: 768px) {
+   .education h4 {
+    font-size: 1rem;
+  }
+
+  .education p {
+    font-size: 0.9rem;
+  }
   .nav-menu {
     display: flex;
     flex-direction: column;
