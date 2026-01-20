@@ -22,4 +22,17 @@ async function loadProjects() {
   }
   
   loadProjects();
-  
+
+  function toggleCertificates() {
+    const extraCerts = document.querySelectorAll('.extra-cert');
+    const btn = document.getElementById('viewMoreBtn');
+
+    const isHidden = extraCerts[0].style.display === '' || extraCerts[0].style.display === 'none';
+
+    extraCerts.forEach(cert => {
+      cert.style.display = isHidden ? 'block' : 'none';
+    });
+
+    btn.textContent = isHidden ? 'View Less' : 'View More';
+  }
+
