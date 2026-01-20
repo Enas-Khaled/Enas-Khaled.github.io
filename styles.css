@@ -301,6 +301,9 @@ section {
   background: #f78166;
   color: #0d1117;
 }
+.extra-project {
+  display: none;
+}
 
 
 /* Contact Section */
