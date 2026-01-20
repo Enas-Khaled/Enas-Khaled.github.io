@@ -486,8 +486,18 @@ footer {
 }
 
 .cert-card img {
-  height: 60px;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 12px;
   margin-bottom: 15px;
+  object-fit: contain
+}
+
+
+.cert-card:hover img {
+  box-shadow: 0 0 12px rgba(88, 166, 255, 0.4);
+  transition: box-shadow 0.3s ease;
 }
 
 .cert-card h3 {
