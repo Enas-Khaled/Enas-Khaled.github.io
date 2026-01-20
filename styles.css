@@ -518,6 +518,30 @@ footer {
 .cert-card a:hover {
   color: #1f6feb;
 }
+
+/* Hide extra certificates initially */
+.extra-cert {
+  display: none;
+}
+
+.view-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#viewMoreBtn {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#viewMoreBtn:hover {
+  text-decoration: underline;
+}
+
 /* Modal Background */
 .modal {
   display: none; 
