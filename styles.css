@@ -337,7 +337,7 @@ section {
   border-color: #58a6ff;
 }
 
-/*footer*/
+
 /* Footer */
 footer {
   margin-top: 40px;
@@ -532,7 +532,7 @@ footer {
   margin-top: 20px;
 }
 
-#viewMoreBtn {
+.viewMoreBtn {
   background: none;
   border: none;
   color: #007bff;
@@ -541,7 +541,7 @@ footer {
   font-weight: 600;
 }
 
-#viewMoreBtn:hover {
+.viewMoreBtn:hover {
   text-decoration: underline;
 }
 
