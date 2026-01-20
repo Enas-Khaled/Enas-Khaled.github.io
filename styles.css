@@ -532,7 +532,7 @@ footer {
   margin-top: 20px;
 }
 
-.viewMoreBtn {
+#viewMoreBtn {
   background: none;
   border: none;
   color: #007bff;
@@ -541,10 +541,21 @@ footer {
   font-weight: 600;
 }
 
-.viewMoreBtn:hover {
+#viewMoreBtn:hover {
   text-decoration: underline;
 }
+#viewMoreProjectsBtn {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
 
+#viewMoreProjectsBtn:hover {
+  text-decoration: underline;
+}
 /* Modal Background */
 .modal {
   display: none; 
