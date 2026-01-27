@@ -8,6 +8,14 @@
 	  "image": "assets/oic-project.png"
 	},
 	{
+	  "title": " Sales Data Integration with Oracle Cloud",
+	  "tech": "Oracle Integration Cloud (OIC)",
+	  "description": "Integration to ingest bulk sales datasets from FTP servers into Autonomous Data Warehouse (ADW)",
+	  "repoUrl": "https://github.com/Enas-Khaled/End-to-End-Sales-Data-Automation-with-OIC-ADW.git",
+	  "demoUrl": "https://youtu.be/ws-6Gh-eeNE",
+	  "image": "assets/ADW_project.png"
+	},
+	{
 	  "title": "Doctor Appointments Made Easy",
 	  "tech": "Oracle APEX + Workflows",
 	  "description": "Built an appointment booking system with automation workflows.",
@@ -16,4 +24,3 @@
 	  "image": "assets/apex-project.png"
 	}
   ]
-  
