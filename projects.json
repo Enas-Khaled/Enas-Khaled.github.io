@@ -22,5 +22,14 @@
 	  "repoUrl": "https://github.com/Enas-Khaled/Doctor-Appointments",
 	  "demoUrl": "https://youtu.be/YOUR_VIDEO_LINK",
 	  "image": "assets/apex-project.png"
+	},
+	{
+	  "title": ""Oracle ERP to FTP: Purchase Order Automation Project",
+	  "tech": "OIC",
+	  "description": "Developed an automated procurement integration using Oracle Integration Cloud (OIC) to seamlessly sync Purchase Orders with external vendor directories.
+        This solution ensures real-time data accuracy and streamlines supply chain communication by eliminating manual file transfers.",
+	  "repoUrl": href="https://github.com/Enas-Khaled/Oracle-ERP-to-FTP-Purchase-Order-Automation.git",
+	  "demoUrl": "https://youtu.be/8O3Zh5Dcq2k",
+	  "image": "assets/po_event.png"
 	}
   ]
