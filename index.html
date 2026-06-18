@@ -61,11 +61,9 @@
   <h3>About Me</h3>
   <div class="about-card">
     <p>
-      Oracle Fusion Technical Consultant with a solid foundation in Oracle Integration Cloud (OIC) and Fusion Cloud Applications. 
-      Skilled in developing and testing integrations using REST/SOAP services, and implementing process automation using Oracle Process Automation / OIC,
-      and extending applications with Visual Builder (VBCS) and Redwood UI. Hands-on with BI Publisher (BIP), OTBI, FBDI, HDL, UCM file transfers,
-      and ESS job automation through self-directed projects and certifications. Passionate about designing efficient Oracle Cloud solutions and continuously 
-      growing technical expertise.
+      Oracle Fusion Technical Consultant with hands-on experience in Oracle Fusion ERP integrations, Oracle Integration Cloud, BI Publisher, SQL/PLSQL, and REST/SOAP APIs.
+      I work on end-to-end technical solutions across integration, reporting, data migration, automation, and business process workflows, with a strong focus on API documentation, troubleshooting, 
+      testing support, and clear technical delivery. I also build Oracle Cloud projects and proof-of-concepts using OIC, APEX, VBCS, and related Oracle technologies.
     </p>
           <hr class="about-divider">
 
@@ -98,7 +96,91 @@
   </div>
 </section>
 
+<section id="certificates">
+  <h2>Certifications & Professional Training</h2>
+  <div class="cert-grid">
+    <!-- Certificate 0 -->
+    <div class="cert-card" onclick="openModal(0)">
+      <img src="assets/global_logo.jpg" alt="Global Academy Logo">
+      <h3>Oracle Fusion Cloud Development Training - 2025</h3>
+      <p>Click to View</p>
+    </div>
+    
+    <!-- Certificate 1 -->
+    <div class="cert-card" onclick="openModal(1)">
+      <img src="assets/oic_logo.jpg" alt="Oracle OIC Logo">
+      <h3>Oracle Cloud Infrastructure 2025 Application Integration Professional</h3>
+      <p>Click to View</p>
+    </div>
+    <!-- Certificate 2 -->
+    <div class="cert-card" onclick="openModal(2)">
+      <img src="assets/vbcs.jpg" alt="Oracle vbcs Logo">
+      <h3>Oracle Redwood Application 2025 Certified Developer Associate</h3>
+      <p>Click to View</p>
+    </div>
 
+    <!-- Certificate 3 -->
+    <div class="cert-card extra-cert" onclick="openModal(3)">
+      <img src="assets/oracle-logo.png" alt="Oracle Logo">
+      <h3>Oracle Cloud Infrastructure Certified Foundations Associate - 2025</h3>
+      <p>Click to View</p>
+    </div>
+
+    <!-- Certificate 4 -->
+    <div class="cert-card extra-cert" onclick="openModal(4)">
+      <img src="assets/oracle-logo.png" alt="Oracle Logo">
+      <h3>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+      <p>Click to View</p>
+    </div>
+
+      <!-- Certificate 5 -->
+    <div class="cert-card extra-cert" onclick="openModal(5)">
+      <img src="assets/apexLogo.jpg" alt="Oracle APEX Logo">
+      <h3>	Oracle APEX Developer Professional - 2025</h3>
+      <p>Click to View</p>
+    </div>
+    
+    <!-- Certificate 6 -->
+    <div class="cert-card extra-cert" onclick="openModal(6)">
+      <img src="assets/next.jpeg" alt="Next Academy Logo">
+      <h3>Oracle Fusion Technical Consultant Training - 2024</h3>
+      <p>Click to View</p>
+    </div>
+
+    <!-- Certificate 7 -->
+    <div class="cert-card extra-cert" onclick="openModal(7)">
+      <img src="assets/alx-logo.jpeg" alt="ALX Logo">
+      <h3>12 Month ALX Software Engineering Program - 2024</h3>
+      <p>Click to View</p>
+    </div>
+    <!-- Certificate 8 -->
+    <div class="cert-card extra-cert" onclick="openModal(8)">
+      <img src="assets/udacity-logo1.png" alt="udacity-logo">
+      <h3>Front-End NanoDegree Program - 2023</h3>
+      <p>Click to View</p>
+    </div>
+    <!-- Certificate 9 -->
+    <div class="cert-card extra-cert" onclick="openModal(9)">
+      <img src="assets/udacity-logo1.png" alt="udacity-logo">
+      <h3>Full Stack Web Developer Nanodegree Program - 2019</h3>
+      <p>Click to View</p>
+    </div>
+  </div>
+  <!-- View More Button -->
+  <div class="view-more-container">
+    <button id="viewMoreBtn" onclick="toggleCertificates()">View More</button>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="certModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="certImage">
+  <div id="certCaption" class="caption"></div>
+  <a class="prev" onclick="changeCert(-1)">&#10094;</a>
+  <a class="next" onclick="changeCert(1)">&#10095;</a>
+</div>
+    
  <section id="projects">
   <h3>Sample Projects</h3>
   <div class="projects-grid">
@@ -208,90 +290,7 @@
     <button id="viewMoreProjectsBtn" onclick="toggleProjects()">View More</button>
   </div>  
 </section>
-<section id="certificates">
-  <h2>Certifications & Professional Training</h2>
-  <div class="cert-grid">
-    <!-- Certificate 0 -->
-    <div class="cert-card" onclick="openModal(0)">
-      <img src="assets/global_logo.jpg" alt="Global Academy Logo">
-      <h3>Oracle Fusion Cloud Development Training - 2025</h3>
-      <p>Click to View</p>
-    </div>
-    
-    <!-- Certificate 1 -->
-    <div class="cert-card" onclick="openModal(1)">
-      <img src="assets/oic_logo.jpg" alt="Oracle OIC Logo">
-      <h3>Oracle Cloud Infrastructure 2025 Application Integration Professional</h3>
-      <p>Click to View</p>
-    </div>
-    <!-- Certificate 2 -->
-    <div class="cert-card" onclick="openModal(2)">
-      <img src="assets/vbcs.jpg" alt="Oracle vbcs Logo">
-      <h3>Oracle Redwood Application 2025 Certified Developer Associate</h3>
-      <p>Click to View</p>
-    </div>
 
-    <!-- Certificate 3 -->
-    <div class="cert-card extra-cert" onclick="openModal(3)">
-      <img src="assets/oracle-logo.png" alt="Oracle Logo">
-      <h3>Oracle Cloud Infrastructure Certified Foundations Associate - 2025</h3>
-      <p>Click to View</p>
-    </div>
-
-    <!-- Certificate 4 -->
-    <div class="cert-card extra-cert" onclick="openModal(4)">
-      <img src="assets/oracle-logo.png" alt="Oracle Logo">
-      <h3>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
-      <p>Click to View</p>
-    </div>
-
-      <!-- Certificate 5 -->
-    <div class="cert-card extra-cert" onclick="openModal(5)">
-      <img src="assets/apexLogo.jpg" alt="Oracle APEX Logo">
-      <h3>	Oracle APEX Developer Professional - 2025</h3>
-      <p>Click to View</p>
-    </div>
-    
-    <!-- Certificate 6 -->
-    <div class="cert-card extra-cert" onclick="openModal(6)">
-      <img src="assets/next.jpeg" alt="Next Academy Logo">
-      <h3>Oracle Fusion Technical Consultant Training - 2024</h3>
-      <p>Click to View</p>
-    </div>
-
-    <!-- Certificate 7 -->
-    <div class="cert-card extra-cert" onclick="openModal(7)">
-      <img src="assets/alx-logo.jpeg" alt="ALX Logo">
-      <h3>12 Month ALX Software Engineering Program - 2024</h3>
-      <p>Click to View</p>
-    </div>
-    <!-- Certificate 8 -->
-    <div class="cert-card extra-cert" onclick="openModal(8)">
-      <img src="assets/udacity-logo1.png" alt="udacity-logo">
-      <h3>Front-End NanoDegree Program - 2023</h3>
-      <p>Click to View</p>
-    </div>
-    <!-- Certificate 9 -->
-    <div class="cert-card extra-cert" onclick="openModal(9)">
-      <img src="assets/udacity-logo1.png" alt="udacity-logo">
-      <h3>Full Stack Web Developer Nanodegree Program - 2019</h3>
-      <p>Click to View</p>
-    </div>
-  </div>
-  <!-- View More Button -->
-  <div class="view-more-container">
-    <button id="viewMoreBtn" onclick="toggleCertificates()">View More</button>
-  </div>
-</section>
-
-<!-- Modal -->
-<div id="certModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="certImage">
-  <div id="certCaption" class="caption"></div>
-  <a class="prev" onclick="changeCert(-1)">&#10094;</a>
-  <a class="next" onclick="changeCert(1)">&#10095;</a>
-</div>
 
 
 
