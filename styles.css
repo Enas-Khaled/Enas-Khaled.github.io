@@ -138,7 +138,22 @@ section h3 {
   transform: scale(1.05);
 }
 
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 18px;
+}
 
+.project-tools span {
+  padding: 4px 9px;
+  border-radius: 12px;
+  color: #58a6ff;
+  background-color: rgba(88, 166, 255, 0.12);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
 /* Sections */
 section {
   margin: 40px 0;
