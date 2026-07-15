@@ -167,208 +167,135 @@
 </section>
 
     
+```html
 <section id="projects">
   <h3>Selected Enterprise and Oracle Projects</h3>
-
   <div class="projects-grid">
 
     <div class="project-card">
-      <img src="assets/fbdi_2.png" alt="Salesforce to Oracle Fusion Customer Integration">
-
+      <img src="assets/pib.png" alt="Oracle Fusion Customer Creation and Update Integration">
       <h4>Customer Creation and Update Integration</h4>
-
-      <p>
-        Enhanced an enterprise integration that creates and updates customer accounts,
-        sites, addresses and account profiles in Oracle Fusion Cloud from Salesforce.
-        The solution uses OIC, FBDI, SOAP services, REST APIs and PL/SQL validation,
-        with automated import monitoring, error reporting and post-import DFF updates.
-      </p>
-
+      <p>Enhanced an enterprise integration that creates and updates customer accounts, sites, addresses and account profiles in Oracle Fusion Cloud from Salesforce.
+        The solution uses OIC, FBDI, SOAP services, REST APIs and PL/SQL validation, with automated import monitoring, error reporting and post-import DFF updates.</p>
+      <!--
       <div class="project-links">
-        <span>Oracle Fusion</span>
-        <span>OIC</span>
-        <span>FBDI</span>
+        <a href="#" target="_blank">🔗 Demo</a>
+        <a href="#" target="_blank">📂 Code</a>
       </div>
+      -->
     </div>
-
+        
     <div class="project-card">
       <img src="assets/po_event.png" alt="Salesforce to Oracle Fusion Sales Order Integration">
-
       <h4>Sales Order Inbound Integration</h4>
-
-      <p>
-        Developed an inbound integration enabling Salesforce to create sales orders
-        in Oracle Fusion Order Management. The integration maps customer and site data,
-        fulfillment organizations, payment terms, requested dates, shipping instructions
-        and order lines, with business validation and structured error handling.
-      </p>
-
+      <p>Developed an inbound integration enabling Salesforce to create sales orders in Oracle Fusion Order Management.
+        The integration maps customer and site data, fulfillment organizations, payment terms, requested dates, shipping instructions and order lines, with business validation and structured error handling.</p>
+      <!--
       <div class="project-links">
-        <span>Order Management</span>
-        <span>REST API</span>
-        <span>JSON</span>
+        <a href="#" target="_blank">🔗 Demo</a>
+        <a href="#" target="_blank">📂 Code</a>
       </div>
+      -->
     </div>
-
-    <div class="project-card extra-project">
-      <img src="assets/pib.png" alt="Oracle Fusion Invoice Synchronization with Salesforce">
-
-      <h4>Invoice Synchronization with Salesforce</h4>
-
-      <p>
-        Built a scheduled integration to synchronize Oracle Receivables invoices,
-        credit memos and debit memos with Salesforce. The solution extracts invoice
-        headers and lines through BI Publisher, validates accounting status, calculates
-        remaining balances and supports incremental processing through ATP staging tables.
-      </p>
-
-      <div class="project-links">
-        <span>Receivables</span>
-        <span>BI Publisher</span>
-        <span>ATP</span>
-      </div>
-    </div>
-
-    <div class="project-card extra-project">
-      <img src="assets/ADW_project.png" alt="Oracle Fusion Customer Receipt Synchronization">
-
-      <h4>Customer Receipt Synchronization</h4>
-
-      <p>
-        Implemented an Oracle Receivables integration that synchronizes customer receipts,
-        total amounts, remaining balances, currencies, receipt dates and statuses with
-        Salesforce. The design supports receipt reversals, POST and PATCH processing,
-        duplicate prevention, staging and integration fault handling.
-      </p>
-
-      <div class="project-links">
-        <span>Oracle AR</span>
-        <span>OIC</span>
-        <span>PL/SQL</span>
-      </div>
-    </div>
-
-    <div class="project-card extra-project">
-      <img src="assets/pub_sub.png" alt="Invoice and Receipt Application Integration">
-
-      <h4>Invoice and Receipt Application Integration</h4>
-
-      <p>
-        Developed synchronization for receipt application and unapplication transactions
-        between Oracle Fusion and Salesforce. The integration links receipts with invoices
-        and debit memos, validates applied amounts and manages processing dependencies when
-        related records are not yet available in the target system.
-      </p>
-
-      <div class="project-links">
-        <span>Receivables</span>
-        <span>REST API</span>
-        <span>Error Handling</span>
-      </div>
-    </div>
-
-    <div class="project-card extra-project">
-      <img src="assets/hr_vb.png" alt="Customer Hold and Release Integration">
-
-      <h4>Customer Hold and Release Integration</h4>
-
-      <p>
-        Implemented an automated integration that synchronizes customer hold and release
-        statuses from Oracle Fusion to Salesforce. The process evaluates customer status
-        and termination dates, performs incremental extraction and updates Salesforce
-        accounts through external identifiers.
-      </p>
-
-      <div class="project-links">
-        <span>Oracle Fusion</span>
-        <span>Salesforce</span>
-        <span>REST API</span>
-      </div>
-    </div>
-
-    <div class="project-card extra-project">
-      <img src="assets/doctor.png" alt="Oracle Inventory Availability API">
-
-      <h4>Inventory Availability API</h4>
-
-      <p>
-        Designed a REST API that provides Salesforce with Oracle Inventory on-hand
-        quantities by item, inventory organization and subinventory. The service supports
-        parameterized filtering and returns Oracle inventory item identifiers for reliable
-        insert and update processing in the target system.
-      </p>
-
-      <div class="project-links">
-        <span>Oracle Inventory</span>
-        <span>REST API</span>
-        <span>SQL</span>
-      </div>
-    </div>
-
-    <div class="project-card extra-project">
-      <img src="assets/fbdi_m.png" alt="Oracle Fusion Lookup Services">
-
-      <h4>Oracle Fusion Lookup Services</h4>
-
-      <p>
-        Developed reusable lookup APIs that expose validated Oracle Fusion reference data
-        to Salesforce. The services provide payment terms, business units, organizations,
-        subinventories, currencies, receipt methods, transaction types, tax classifications
-        and other values required by enterprise integrations.
-      </p>
-
-      <div class="project-links">
-        <span>BI Publisher</span>
-        <span>LOV Services</span>
-        <span>SQL</span>
-      </div>
-    </div>
-
+    
     <div class="project-card extra-project">
       <img src="assets/hr_vb.png" alt="HR Management System built with Oracle Visual Builder">
-
-      <h4>HR Management System</h4>
-
-      <p>
-        Developed a responsive Progressive Web App using Oracle Visual Builder for
-        managing employees and departments. The application supports creating, viewing,
-        editing and deleting records through a structured interface with reusable
-        business objects and responsive page layouts.
-      </p>
-
+      <h4>HR Management System (VBCS)</h4>
+      <p>Developed a responsive Progressive Web App using Oracle Visual Builder for managing employees and departments.
+        The application supports creating, viewing, editing and deleting records through clean navigation, reusable business objects and responsive page layouts.</p>
+      <!--
       <div class="project-links">
-        <span>Visual Builder</span>
-        <span>PWA</span>
-        <span>CRUD</span>
+        <a href="https://youtu.be/d8qzU8idgAo" target="_blank">🔗 Demo</a>
+        <a href="https://github.com/Enas-Khaled/HR-management-system.git" target="_blank">📂 Code</a>
       </div>
+      -->
     </div>
+
+    <div class="project-card extra-project">
+      <img src="assets/ADW_project.png" alt="Oracle Fusion Invoice Synchronization with Salesforce">
+      <h4>Invoice Synchronization with Salesforce</h4>
+      <p>Built a scheduled integration to synchronize Oracle Receivables invoices, credit memos and debit memos with Salesforce.
+        The solution extracts invoice headers and lines through BI Publisher, validates accounting status, calculates remaining balances and supports incremental processing through ATP staging tables.</p>
+      <!--
+      <div class="project-links">
+        <a href="#" target="_blank">🔗 Demo</a>
+        <a href="#" target="_blank">📂 Code</a>
+      </div>
+      -->
+    </div>
+
+    <div class="project-card extra-project">
+      <img src="assets/pub_sub.png" alt="Oracle Fusion Customer Receipt Synchronization">
+      <h4>Customer Receipt Synchronization</h4>
+      <p>Implemented an Oracle Receivables integration that synchronizes customer receipts, total amounts, remaining balances, currencies, receipt dates and statuses with Salesforce.
+        The design supports receipt reversals, POST and PATCH processing, duplicate prevention, ATP staging and integration fault handling.</p>
+      <!--
+      <div class="project-links">
+        <a href="#" target="_blank">🔗 Demo</a>
+        <a href="#" target="_blank">📂 Code</a>
+      </div>
+      -->
+    </div>
+
+    <div class="project-card extra-project">
+      <img src="assets/fbdi_m.png" alt="Oracle Fusion Invoice and Receipt Application Integration">
+      <h4>Invoice and Receipt Application Integration</h4>
+      <p>Developed synchronization for receipt application and unapplication transactions between Oracle Fusion and Salesforce.
+        The integration links receipts with invoices and debit memos, validates applied amounts and manages processing dependencies when related records are not yet available in the target system.</p>
+      <!--
+      <div class="project-links">
+        <a href="#" target="_blank">🔗 Demo</a>
+        <a href="#" target="_blank">📂 Code</a>
+      </div>
+      -->
+    </div>  
+
+    <div class="project-card extra-project">
+      <img src="assets/fbdi_2.png" alt="Oracle Inventory Availability API">
+      <h4>Inventory Availability API</h4>
+      <p>Designed a REST API that provides Salesforce with Oracle Inventory on-hand quantities by item, inventory organization and subinventory.
+        The service supports parameterized filtering and returns Oracle inventory item identifiers for reliable insert and update processing in the target system.</p>
+      <!--
+      <div class="project-links">
+        <a href="#" target="_blank">🔗 Demo</a>
+        <a href="#" target="_blank">📂 Code</a>
+      </div>
+      -->
+    </div> 
 
     <div class="project-card extra-project">
       <img src="assets/doctor.png" alt="Doctor Appointment System built with Oracle APEX">
-
-      <h4>Doctor Appointment System</h4>
-
-      <p>
-        Built an appointment booking application using Oracle APEX and Oracle Workflows.
-        The solution supports appointment submission, approval processing, status tracking
-        and administrative management through interactive reports, forms and structured
-        workflow activities.
-      </p>
-
+      <h4>Doctor Appointment System (APEX)</h4>
+      <p>Built an appointment booking application using Oracle APEX and Oracle Workflows.
+        The solution supports appointment submission, approval processing, status tracking and administrative management through interactive reports, forms and structured workflow activities.</p>
+      <!--
       <div class="project-links">
-        <span>Oracle APEX</span>
-        <span>Workflows</span>
-        <span>Low Code</span>
+        <a href="https://youtu.be/qc9oO5LZ-c4m" target="_blank">🔗 Demo</a>
+        <a href="https://github.com/Enas-Khaled/Doctor-Appointments-Made-Easy.git" target="_blank">📂 Code</a>
       </div>
+      -->
     </div>
 
+<!--
+    <div class="project-card">
+      <img src="assets/bi-supplier-payments.png" alt="BI Publisher Project">
+      <h4>BI Publisher Report – Supplier Payments</h4>
+      <p>Custom BI Publisher report for supplier invoices and payments, with filters and scheduling.</p>
+      <div class="project-links">
+        <a href="https://your-demo-link.com" target="_blank">🔗 Demo</a>
+        <a href="https://github.com/Enas-Khaled/bi-supplier-payments" target="_blank">📂 Code</a>
+        <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">🎥 Video</a>
+      </div>
+    </div>
+-->
   </div>
 
   <!-- View More Button -->
   <div class="view-more-container">
     <button id="viewMoreProjectsBtn" onclick="toggleProjects()">View More</button>
-  </div>
+  </div>  
 </section>
+```
 
 <section id="certificates">
   <h2>Certifications & Professional Training</h2>
