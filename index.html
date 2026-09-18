@@ -1,593 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QREE9JZGYB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QREE9JZGYB');
-</script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QREE9JZGYB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QREE9JZGYB');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enas Khaled — Oracle Fusion Technical Consultant specializing in OIC integrations, BI Publisher, application customizations, and technical delivery.">
+  <meta name="theme-color" content="#07111f">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <title>Enas Khaled – Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Enas Khaled | Oracle Fusion Technical Consultant</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-  
 <body>
-  <div class="container">
-  <!-- Header -->
- <header>
-  <!-- Centered Title -->
-  <div class="header-center">
-    <h1>Enas Khaled</h1>
-    <p>Oracle Fusion Technical Consultant | OIC • VBCS • OTBI • BI Publisher</p>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header" id="home">
+    <div class="header-shell">
+      <nav class="topbar" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Enas Khaled, home">EK</a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-menu" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+        <div class="nav-menu" id="primary-menu">
+          <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#projects">Implementation Work</a><a href="#certificates">Certifications</a>
+        </div>
+        <div class="social-links-top" aria-label="Professional links">
+          <a href="mailto:enas.ah.khaled@gmail.com" aria-label="Email Enas"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://github.com/Enas-Khaled" target="_blank" rel="noopener noreferrer" aria-label="Enas on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/enas-khaled/" target="_blank" rel="noopener noreferrer" aria-label="Enas on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a href="assets/Enas_Khaled_Oracle_Fusion_Consultant.pdf" class="cv-button" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> CV</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Oracle Fusion technical delivery</p>
+          <h1>Enas Khaled</h1>
+          <h2>Oracle Fusion Technical Consultant</h2>
+          <p class="hero-summary">I design and deliver Oracle Cloud integrations, reports, and application customizations—turning business requirements into reliable technical solutions across the implementation lifecycle.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work</a><a class="button button-secondary" href="mailto:enas.ah.khaled@gmail.com">Contact me</a></div>
+        </div>
+        <aside class="hero-panel" aria-label="Core focus areas">
+          <p class="panel-label">Core focus</p>
+          <ul class="focus-list">
+            <li><i class="fa-solid fa-link" aria-hidden="true"></i><span>OIC integrations and APIs</span></li>
+            <li><i class="fa-solid fa-chart-line" aria-hidden="true"></i><span>BI Publisher and technical reporting</span></li>
+            <li><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i><span>Fusion UI customizations</span></li>
+            <li><i class="fa-solid fa-people-group" aria-hidden="true"></i><span>Implementation and stakeholder delivery</span></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section id="about" class="section-shell intro-section">
+      <div class="section-heading"><p class="section-kicker">Profile</p><h2>About me</h2></div>
+      <div class="about-layout">
+        <div class="surface about-copy">
+          <p class="lead">Oracle Fusion Technical Consultant with hands-on implementation experience delivering integrations between Oracle Fusion Cloud and external business applications.</p>
+          <p>My work covers OIC orchestration, REST and SOAP APIs, BI Publisher, FBDI, ATP staging, SQL/PLSQL, centralized error handling, and Oracle Fusion sandbox customizations. I contribute from requirements clarification and mapping through development, testing, troubleshooting, documentation, deployment preparation, and production readiness.</p>
+          <p>I work closely with functional consultants, business users, application developers, and infrastructure teams. I also lead technical discussions and walkthroughs when alignment is needed across systems, teams, and business processes.</p>
+        </div>
+        <aside class="surface education-card">
+          <div class="icon-badge"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div><p class="card-label">Education</p><h3>B.Sc. in Computers and Information</h3><p>Cairo University, Egypt</p><p class="muted">Graduated 2015</p>
+        </aside>
+      </div>
+    </section>
+    <section id="expertise" class="section-shell">
+      <div class="section-heading heading-row"><div><p class="section-kicker">How I contribute</p><h2>Implementation expertise</h2></div><p class="heading-note">Technical delivery that connects business requirements, Oracle Cloud, and external applications.</p></div>
+      <div class="expertise-grid">
+        <article class="expertise-card"><div class="icon-badge"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div><h3>Integration engineering</h3><p>Design and implementation of real-time, scheduled, inbound, and outbound OIC integrations using REST, SOAP, ERP, database, and file-based services.</p></article>
+        <article class="expertise-card"><div class="icon-badge"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div><h3>Reporting & customization</h3><p>BI Publisher data models and reports, SQL extraction logic, document services, custom Fusion pages, embedded reports, and transaction navigation.</p></article>
+        <article class="expertise-card"><div class="icon-badge"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div><h3>Stakeholder delivery</h3><p>Technical meetings, mapping discussions, solution walkthroughs, issue resolution, cross-team coordination, CRP support, UAT, and business readiness.</p></article>
+        <article class="expertise-card"><div class="icon-badge"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div><h3>Reliability & lifecycle</h3><p>Validation, fault handling, centralized logging, notifications, retry design, reconciliation, test evidence, deployment steps, and operational runbooks.</p></article>
+      </div>
+    </section>
+    <section id="skills" class="section-shell">
+      <div class="section-heading"><p class="section-kicker">Technology</p><h2>Technical toolkit</h2></div>
+      <div class="skills-grid">
+        <article class="skill-group"><h3>Integration</h3><div class="skill-tags"><span>Oracle Integration Cloud</span><span>REST</span><span>SOAP</span><span>JSON</span><span>XML</span><span>XSLT</span><span>WSDL</span></div></article>
+        <article class="skill-group"><h3>Oracle Fusion</h3><div class="skill-tags"><span>Receivables</span><span>Order Management</span><span>Inventory</span><span>Customer Data</span><span>Pricing</span><span>ERP Cloud</span></div></article>
+        <article class="skill-group"><h3>Reporting & data</h3><div class="skill-tags"><span>BI Publisher</span><span>OTBI</span><span>SQL</span><span>PL/SQL</span><span>Oracle ATP</span><span>RTF Templates</span></div></article>
+        <article class="skill-group"><h3>Data migration & automation</h3><div class="skill-tags"><span>FBDI</span><span>HDL</span><span>UCM</span><span>ESS Jobs</span><span>FTP/SFTP</span><span>Staging Design</span></div></article>
+        <article class="skill-group"><h3>Application development</h3><div class="skill-tags"><span>Fusion Sandbox</span><span>VBCS</span><span>Redwood</span><span>APEX</span><span>Process Automation</span><span>JavaScript</span></div></article>
+        <article class="skill-group"><h3>Delivery</h3><div class="skill-tags"><span>Requirements</span><span>Mapping</span><span>Testing</span><span>Troubleshooting</span><span>Documentation</span><span>Technical Walkthroughs</span></div></article>
+      </div>
+    </section>
+    <section id="experience" class="section-shell">
+      <div class="section-heading"><p class="section-kicker">Career</p><h2>Experience</h2></div>
+      <div class="timeline">
+        <article class="timeline-item featured-role">
+          <div class="timeline-marker" aria-hidden="true"></div><div class="timeline-meta"><p class="timeline-date">Apr 2026 — Present</p><p class="company">DTC</p></div>
+          <div class="timeline-content surface">
+            <p class="role-type">Current role</p><h3>Oracle Fusion Technical Consultant <span>| Integration Delivery</span></h3>
+            <p>Contributing to an enterprise Oracle Fusion implementation with responsibility across integration development, reporting, customization, testing, troubleshooting, and technical delivery.</p>
+            <ul class="responsibility-list">
+              <li>Design and implement OIC integrations connecting Oracle Fusion with external business applications across customer, product, pricing, sales order, inventory, shipping, invoice, and receipt processes.</li>
+              <li>Lead and facilitate technical discussions, mapping sessions, solution walkthroughs, defect analysis, and cross-team retesting with functional, business, development, and infrastructure stakeholders.</li>
+              <li>Develop BI Publisher reports, SQL data models, ATP staging tables, PL/SQL packages, API services, validation logic, and automated processing controls.</li>
+              <li>Create, test, and publish Oracle Fusion sandbox customizations, including application pages, embedded interactive reports, transaction hyperlinks, and navigation improvements.</li>
+              <li>Support CRP and UAT activities, investigate complex Fusion behavior, coordinate technical resolutions, and work with Oracle Support when product confirmation is required.</li>
+              <li>Prepare technical designs, API specifications, mapping documents, test scripts, deployment instructions, evidence packs, and operational runbooks.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item"><div class="timeline-marker" aria-hidden="true"></div><div class="timeline-meta"><p class="timeline-date">2018 — Present</p><p class="company">Freelance / Self-employed</p></div><div class="timeline-content surface"><h3>Freelance Software Engineer</h3><p>Delivered web, API, database, documentation, and technical support work while building Oracle Cloud solutions and proofs of concept with OIC, BI Publisher, VBCS, APEX, workflows, SQL/PLSQL, and cloud services.</p></div></article>
+        <article class="timeline-item"><div class="timeline-marker" aria-hidden="true"></div><div class="timeline-meta"><p class="timeline-date">2022 — 2026</p><p class="company">Self-employed</p></div><div class="timeline-content surface"><h3>Programming & IT Instructor</h3><p>Taught programming fundamentals, object-oriented programming, data structures, algorithms, web development, databases, APIs, Git/GitHub, problem solving, and software engineering concepts.</p></div></article>
+        <article class="timeline-item"><div class="timeline-marker" aria-hidden="true"></div><div class="timeline-meta"><p class="timeline-date">2018 — 2020</p><p class="company">Albatool International School</p></div><div class="timeline-content surface"><h3>Computer Teacher</h3><p>Taught computer science, digital skills, programming concepts, and practical technology use while helping students strengthen logical thinking and problem-solving skills.</p></div></article>
+      </div>
+    </section>
+    <section id="projects" class="section-shell">
+      <div class="section-heading heading-row"><div><p class="section-kicker">Selected portfolio</p><h2>Implementation work</h2></div><p class="heading-note">Representative contributions from a broader enterprise implementation. Client-sensitive details are intentionally omitted.</p></div>
+      <div class="projects-grid">
+        <article class="project-card"><div class="project-number">01</div><p class="project-category">Customer master</p><h3>Customer Creation, Update & Profile Integration</h3><p>Enhanced an enterprise customer integration covering accounts, addresses, sites, profiles, contacts, hold/release status, and post-import updates in Oracle Fusion.</p><ul class="project-points"><li>Combined FBDI processing with REST and SOAP services</li><li>Added validations, import monitoring, and post-import corrections</li><li>Investigated and resolved site visibility and contact issues</li></ul><div class="project-tools"><span>OIC</span><span>FBDI</span><span>SOAP</span><span>BI Publisher</span></div></article>
+        <article class="project-card"><div class="project-number">02</div><p class="project-category">Order management</p><h3>Sales Order Integration</h3><p>Implemented inbound sales-order creation and outbound order synchronization between Oracle Fusion and external sales applications.</p><ul class="project-points"><li>Mapped customers, sites, organizations, dates, payment terms, and order lines</li><li>Applied business validations and structured API responses</li><li>Supported end-to-end testing and cross-team issue resolution</li></ul><div class="project-tools"><span>Order Management</span><span>REST API</span><span>OIC</span><span>JSON</span></div></article>
+        <article class="project-card"><div class="project-number">03</div><p class="project-category">Receivables</p><h3>Invoice, Receipt & Application Synchronization</h3><p>Delivered scheduled integrations for invoices, credit and debit memos, customer receipts, reversals, and receipt application or unapplication transactions.</p><ul class="project-points"><li>Developed incremental BI Publisher extraction logic</li><li>Used ATP staging and PL/SQL for controlled processing</li><li>Handled dependencies, duplicates, retries, and remaining balances</li></ul><div class="project-tools"><span>Oracle AR</span><span>BI Publisher</span><span>ATP</span><span>PL/SQL</span></div></article>
+        <article class="project-card extra-project" hidden><div class="project-number">04</div><p class="project-category">Product & supply chain</p><h3>Product, Pricing & Inventory Services</h3><p>Implemented product and price synchronization plus a multi-request inventory availability API for reliable item and on-hand data exchange.</p><ul class="project-points"><li>Mapped product attributes, classifications, descriptions, UOMs, and organizations</li><li>Developed price book and price entry extraction and upsert processing</li><li>Returned line-level success and error details for inventory requests</li></ul><div class="project-tools"><span>Product Hub</span><span>Pricing</span><span>Inventory</span><span>REST</span></div></article>
+        <article class="project-card extra-project" hidden><div class="project-number">05</div><p class="project-category">Reporting & user experience</p><h3>Fusion Reports & Application Customizations</h3><p>Created and published multiple Oracle Fusion sandbox customizations to make operational information easier for users to find and act on.</p><ul class="project-points"><li>Added custom application pages and embedded interactive reports</li><li>Created BI Publisher data models, parameters, and document services</li><li>For example, delivered a Receivables page with an unapplied-receipts report and links to related AR receipts</li></ul><div class="project-tools"><span>Fusion Sandbox</span><span>BI Publisher</span><span>SQL</span><span>Deep Links</span></div></article>
+        <article class="project-card extra-project" hidden><div class="project-number">06</div><p class="project-category">Operational reliability</p><h3>Centralized Integration Error Handling</h3><p>Contributed to a reusable error-management design that captures integration faults, organizes transaction context, and sends structured notifications to support teams.</p><ul class="project-points"><li>Centralized technical and business error logging</li><li>Added recipient management and readable email notifications</li><li>Improved traceability across scheduled and application integrations</li></ul><div class="project-tools"><span>OIC</span><span>ATP</span><span>PL/SQL</span><span>Fault Handling</span></div></article>
+      </div>
+      <div class="view-more-container"><button id="viewMoreProjectsBtn" class="text-button" type="button" aria-expanded="false" aria-controls="projects">View more implementation work <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></div>
+    </section>
+    <section id="cloud-projects" class="section-shell compact-section">
+      <div class="section-heading"><p class="section-kicker">Continued learning</p><h2>Oracle Cloud projects</h2></div>
+      <div class="cloud-project-grid">
+        <article class="mini-project surface"><div class="icon-badge"><i class="fa-solid fa-users-gear" aria-hidden="true"></i></div><div><h3>HR Management System</h3><p>Responsive VBCS progressive web application for employee and department management with reusable business objects and CRUD operations.</p><div class="project-tools"><span>VBCS</span><span>PWA</span><span>Business Objects</span></div></div></article>
+        <article class="mini-project surface"><div class="icon-badge"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></div><div><h3>Appointment Workflow Application</h3><p>Oracle APEX application supporting appointment submission, approval workflows, status tracking, and administrative management.</p><div class="project-tools"><span>Oracle APEX</span><span>Workflows</span><span>Low Code</span></div></div></article>
+      </div>
+    </section>
+    <section id="certificates" class="section-shell">
+      <div class="section-heading heading-row"><div><p class="section-kicker">Credentials</p><h2>Certifications & professional training</h2></div><p class="heading-note">Click any credential to view its certificate.</p></div>
+      <div class="cert-grid">
+        <button class="cert-card" type="button" data-cert-index="0"><img src="assets/global_logo.jpg" alt="Global Academy logo"><span>Oracle Fusion Cloud Development Training</span><small>2025</small></button>
+        <button class="cert-card" type="button" data-cert-index="1"><img src="assets/oic_logo.jpg" alt="Oracle OIC logo"><span>OCI Application Integration Professional</span><small>2025</small></button>
+        <button class="cert-card" type="button" data-cert-index="2"><img src="assets/vbcs.jpg" alt="Oracle Visual Builder logo"><span>Oracle Redwood Application Certified Developer Associate</span><small>2025</small></button>
+        <button class="cert-card extra-cert" type="button" data-cert-index="3" hidden><img src="assets/oracle-logo.png" alt="Oracle logo"><span>OCI Certified Foundations Associate</span><small>2025</small></button>
+        <button class="cert-card extra-cert" type="button" data-cert-index="4" hidden><img src="assets/oracle-logo.png" alt="Oracle logo"><span>OCI Certified AI Foundations Associate</span><small>2025</small></button>
+        <button class="cert-card extra-cert" type="button" data-cert-index="5" hidden><img src="assets/apexLogo.jpg" alt="Oracle APEX logo"><span>Oracle APEX Developer Professional</span><small>2025</small></button>
+        <button class="cert-card extra-cert" type="button" data-cert-index="6" hidden><img src="assets/next.jpeg" alt="Next Academy logo"><span>Oracle Fusion Technical Consultant Training</span><small>2024</small></button>
+        <button class="cert-card extra-cert" type="button" data-cert-index="7" hidden><img src="assets/alx-logo.jpeg" alt="ALX logo"><span>12-Month Software Engineering Program</span><small>2024</small></button>
+        <button class="cert-card extra-cert" type="button" data-cert-index="8" hidden><img src="assets/udacity-logo1.png" alt="Udacity logo"><span>Front-End Nanodegree Program</span><small>2023</small></button>
+        <button class="cert-card extra-cert" type="button" data-cert-index="9" hidden><img src="assets/udacity-logo1.png" alt="Udacity logo"><span>Full Stack Web Developer Nanodegree</span><small>2019</small></button>
+      </div>
+      <div class="view-more-container"><button id="viewMoreBtn" class="text-button" type="button" aria-expanded="false" aria-controls="certificates">View more credentials <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></div>
+    </section>
+    <section class="section-shell contact-section" aria-labelledby="contact-title"><div><p class="section-kicker">Let’s connect</p><h2 id="contact-title">Interested in Oracle Cloud integration and technical delivery?</h2><p>I’m always glad to connect with Oracle professionals, implementation teams, and organizations working on meaningful cloud transformation.</p></div><a class="button button-primary" href="mailto:enas.ah.khaled@gmail.com">Send me an email</a></section>
+  </main>
+  <div id="certModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="certCaption" aria-hidden="true">
+    <button class="modal-close" type="button" aria-label="Close certificate viewer"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button><button class="modal-nav prev" type="button" aria-label="Previous certificate"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+    <figure class="modal-figure"><img class="modal-content" id="certImage" src="" alt=""><figcaption id="certCaption" class="caption"></figcaption></figure>
+    <button class="modal-nav next" type="button" aria-label="Next certificate"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
   </div>
-  
-  <!-- Navigation + Social -->
-  <div class="header-bottom">
-    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
-
-    <!-- Navigation Menu -->
-    <nav class="nav-menu">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects"> Sample Projects</a>
-      <a href="#certificates">Certificates</a>
-    </nav>
- 
-    <!-- Social & CV -->
-    <div class="social-links-top">
-      <a href="mailto:enas.ah.khaled@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/Enas-Khaled" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/enas-khaled/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="assets/Enas_Khaled_Oracle_Fusion_Consultant.pdf" class="cv-button" download>📄 CV</a>
-    </div>
-
-   
-  </div>
-</header>
-
-
-  <!-- About -->
- <section id="about">
-  <h3>About Me</h3>
-  <div class="about-card">
-    <p>
-      Oracle Fusion Technical Consultant with hands-on experience in Oracle Fusion ERP integrations, Oracle Integration Cloud, BI Publisher, SQL/PLSQL, and REST/SOAP APIs.
-      I work on end-to-end technical solutions across integration, reporting, data migration, automation, and business process workflows, with a strong focus on API documentation, troubleshooting, 
-      testing support, and clear technical delivery. I also build Oracle Cloud projects and proof-of-concepts using OIC, APEX, VBCS, and related Oracle technologies.
-    </p>
-          <hr class="about-divider">
-
-    <div class="education">
-      <h4>Education</h4>
-      <p>
-        <strong>Bachelor of Science Degree in Computers and Information  </strong><br>
-        Cairo University, Egypt - 2015
-      </p>
-    </div>
-  </div>
-</section>
-
-  <section id="skills">
-  <h3>Skills</h3>
-  <div class="skills-grid">
-    <div class="skill-card">Oracle Integration Cloud (OIC)</div>
-    <div class="skill-card">Visual Builder (VBCS)</div>
-    <div class="skill-card">Oracle Process Automation (OPA)</div>
-    <div class="skill-card">OTBI & BI Publisher</div>
-    <div class="skill-card">FBDI & HCM Data Loader</div>
-    <div class="skill-card">UCM Web Services & ESS Jobs</div>
-    <div class="skill-card">Application Customizations</div>
-    <div class="skill-card">SQL & PL/SQL</div>
-    <div class="skill-card">REST & SOAP APIs</div>
-    <div class="skill-card">APEX</div>
-    <div class="skill-card">JavaScript, HTML, CSS</div>
-    <div class="skill-card">Linux, Git, GitHub</div>
-    <div class="skill-card">Java, C++, C and Python</div>
-  </div>
-</section>
-
-
-<!-- Experience -->
-<section id="experience">
-  <h3>Experience</h3>
-
-  <div class="about-card">
-
-    <div class="education">
-      <h5>Oracle Fusion Technical Consultant | OIC & ERP Integration Lead</h5>
-      <p>
-        <strong>DTC</strong> — Apr 2026–Present
-      </p>
-      <p>
-        Working on Oracle Fusion ERP technical integrations, BI Publisher reports, SQL queries,
-        API documentation, and end-to-end integration support across customer, invoice, receipt,
-        sales order, lookup, and reporting flows.
-      </p>
-      <p>
-        Using Oracle Integration Cloud, REST/SOAP APIs, JSON/XML, SQL, Oracle ATP, and Oracle Fusion
-        technologies to support integration delivery, testing, troubleshooting, and stakeholder walkthroughs.
-      </p>
-    </div>
-
-    <hr class="about-divider">
-
-    <div class="education">
-      <h5>Freelance Software Engineer | Oracle Cloud, Web & API Solutions</h5>
-      <p>
-        <strong>Freelance / Self-employed</strong> — 2018–Present
-      </p>
-      <p>
-        Delivered small-scale software projects and technical support across websites, web applications,
-        APIs, databases, documentation, troubleshooting, and software setup tasks.
-      </p>
-      <p>
-        Built Oracle Cloud sample projects and proof-of-concepts using OIC, BI Publisher, FBDI,
-        VBCS, APEX, Workflows, REST/SOAP APIs, FTP/SFTP, ADW, Object Storage, and SQL/PLSQL.
-      </p>
-    </div>
-
-    <hr class="about-divider">
-
-    <div class="education">
-      <h5>Programming & IT Instructor</h5>
-      <p>
-        <strong>Self-employed</strong> — 2022–2026
-      </p>
-      <p>
-        Delivered programming and IT training in web development, programming fundamentals,object-oriented programming (OOP), data structures and algorithms,
-        databases, APIs, Git/GitHub, problem solving, and software engineering concepts.
-      </p>
-    </div>
-
-    <hr class="about-divider">
-
-    <div class="education">
-      <h5>Computer Teacher</h5>
-      <p>
-        <strong>Albatool International School</strong> — 2018–2020
-      </p>
-      <p>
-        Taught computer science, digital skills, programming concepts, and practical technology usage,
-        while supporting students in logical thinking and problem-solving skills.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-    
-
-<section id="projects">
-  <h3>Selected Projects</h3>
-  <div class="projects-grid">
-
-    <div class="project-card">
-       <!--<img src="assets/pib.png" alt="Oracle Fusion Customer Creation and Update Integration">-->
-      <h4>Customer Creation and Update Integration</h4>
-      <p>Enhanced an enterprise integration that creates and updates customer accounts, sites, addresses and account profiles in Oracle Fusion Cloud from Salesforce.
-        The solution uses OIC, FBDI, SOAP services, REST APIs and PL/SQL validation, with automated import monitoring, error reporting and post-import DFF updates.</p>
-      <!--
-      <div class="project-links">
-        <a href="#" target="_blank">🔗 Demo</a>
-        <a href="#" target="_blank">📂 Code</a>
-      </div>
-      -->
-      <div class="project-tools">
-        <span>Oracle Fusion</span>
-        <span>OIC</span>
-        <span>FBDI</span>
-      </div>
-    </div>
-        
-    <div class="project-card">
-     <!--  <img src="assets/po_event.png" alt="Salesforce to Oracle Fusion Sales Order Integration">-->
-      <h4>Sales Order Inbound Integration</h4>
-      <p>Developed an inbound integration enabling Salesforce to create sales orders in Oracle Fusion Order Management.
-        The integration maps customer and site data, fulfillment organizations, payment terms, requested dates, shipping instructions and order lines, with business validation and structured error handling.</p>
-      <!--
-      <div class="project-links">
-        <a href="#" target="_blank">🔗 Demo</a>
-        <a href="#" target="_blank">📂 Code</a>
-      </div>
-      -->
-      <div class="project-tools">
-        <span>Order Management</span>
-        <span>REST API</span>
-        <span>JSON</span>
-      </div>
-    </div>
-    
-    <div class="project-card extra-project">
-      <!-- <img src="assets/hr_vb.png" alt="HR Management System built with Oracle Visual Builder">-->
-      <h4>HR Management System (VBCS)</h4>
-      <p>Developed a responsive Progressive Web App using Oracle Visual Builder for managing employees and departments.
-        The application supports creating, viewing, editing and deleting records through clean navigation, reusable business objects and responsive page layouts.</p>
-      <!--
-      <div class="project-links">
-        <a href="https://youtu.be/d8qzU8idgAo" target="_blank">🔗 Demo</a>
-        <a href="https://github.com/Enas-Khaled/HR-management-system.git" target="_blank">📂 Code</a>
-      </div>
-      -->
-      <div class="project-tools">
-       <span>Visual Builder</span>
-        <span>PWA</span>
-        <span>CRUD</span>
-      </div>
-    </div>
-
-    <div class="project-card extra-project">
-      <!-- <img src="assets/ADW_project.png" alt="Oracle Fusion Invoice Synchronization with Salesforce">-->
-      <h4>Invoice Synchronization with Salesforce</h4>
-      <p>Built a scheduled integration to synchronize Oracle Receivables invoices, credit memos and debit memos with Salesforce.
-        The solution extracts invoice headers and lines through BI Publisher, validates accounting status, calculates remaining balances and supports incremental processing through ATP staging tables.</p>
-      <!--
-      <div class="project-links">
-        <a href="#" target="_blank">🔗 Demo</a>
-        <a href="#" target="_blank">📂 Code</a>
-      </div>
-      -->
-      <div class="project-tools">
-        <span>Receivables</span>
-        <span>BI Publisher</span>
-        <span>ATP</span>
-      </div>
-    </div>
-
-    <div class="project-card extra-project">
-       <!--<img src="assets/pub_sub.png" alt="Oracle Fusion Customer Receipt Synchronization">-->
-      <h4>Customer Receipt Synchronization</h4>
-      <p>Implemented an Oracle Receivables integration that synchronizes customer receipts, total amounts, remaining balances, currencies, receipt dates and statuses with Salesforce.
-        The design supports receipt reversals, POST and PATCH processing, duplicate prevention, ATP staging and integration fault handling.</p>
-      <!--
-      <div class="project-links">
-        <a href="#" target="_blank">🔗 Demo</a>
-        <a href="#" target="_blank">📂 Code</a>
-      </div>
-      -->
-      <div class="project-tools">
-        <span>Oracle AR</span>
-        <span>OIC</span>
-        <span>PL/SQL</span>>
-      </div>
-    </div>
-
-    <div class="project-card extra-project">
-     <!--  <img src="assets/fbdi_m.png" alt="Oracle Fusion Invoice and Receipt Application Integration">-->
-      <h4>Invoice and Receipt Application Integration</h4>
-      <p>Developed synchronization for receipt application and unapplication transactions between Oracle Fusion and Salesforce.
-        The integration links receipts with invoices and debit memos, validates applied amounts and manages processing dependencies when related records are not yet available in the target system.</p>
-      <!--
-      <div class="project-links">
-        <a href="#" target="_blank">🔗 Demo</a>
-        <a href="#" target="_blank">📂 Code</a>
-      </div>
-      -->
-      <div class="project-tools">
-        <span>Receivables</span>
-        <span>REST API</span>
-        <span>Error Handling</span>
-      </div>
-    </div>  
-
-    <div class="project-card extra-project">
-      <!-- <img src="assets/fbdi_2.png" alt="Oracle Inventory Availability API">-->
-      <h4>Inventory Availability API</h4>
-      <p>Designed a REST API that provides Salesforce with Oracle Inventory on-hand quantities by item, inventory organization and subinventory.
-        The service supports parameterized filtering and returns Oracle inventory item identifiers for reliable insert and update processing in the target system.</p>
-      <!--
-      <div class="project-links">
-        <a href="#" target="_blank">🔗 Demo</a>
-        <a href="#" target="_blank">📂 Code</a>
-      </div>
-      -->
-      <div class="project-tools">
-        <span>Oracle Inventory</span>
-        <span>REST API</span>
-        <span>SQL</span>
-      </div>
-    </div> 
-
-    <div class="project-card extra-project">
-      <!-- <img src="assets/doctor.png" alt="Doctor Appointment System built with Oracle APEX">-->
-      <h4>Doctor Appointment System (APEX)</h4>
-      <p>Built an appointment booking application using Oracle APEX and Oracle Workflows.
-        The solution supports appointment submission, approval processing, status tracking and administrative management through interactive reports, forms and structured workflow activities.</p>
-      <!--
-      <div class="project-links">
-        <a href="https://youtu.be/qc9oO5LZ-c4m" target="_blank">🔗 Demo</a>
-        <a href="https://github.com/Enas-Khaled/Doctor-Appointments-Made-Easy.git" target="_blank">📂 Code</a>
-      </div>
-      -->
-      <div class="project-tools">
-        <span>Oracle APEX</span>
-        <span>Workflows</span>
-        <span>Low Code</span>
-      </div>
-    </div>
-    <div class="project-card extra-project">
-      <!-- <img src="assets/doctor.png" alt="Doctor Appointment System built with Oracle APEX">-->
-      <h4>Customer Hold and Release Integration</h4>
-      <p>Built an appointment booking application using Oracle APEX and Oracle Workflows.
-        Implemented an automated integration that synchronizes customer hold and release
-        statuses from Oracle Fusion to Salesforce. The process evaluates customer status
-        and termination dates, performs incremental extraction and updates Salesforce
-        accounts through external identifiers.
-        <!--
-      <div class="project-links">
-        <a href="https://youtu.be/qc9oO5LZ-c4m" target="_blank">🔗 Demo</a>
-        <a href="https://github.com/Enas-Khaled/Doctor-Appointments-Made-Easy.git" target="_blank">📂 Code</a>
-      </div>
-      -->
-      <div class="project-tools">
-        <span>Oracle Fusion</span>
-        <span>Salesforce</span>
-        <span>REST API</span>
-      </div>
-    </div>
-
-<!--
-    <div class="project-card">
-      <img src="assets/bi-supplier-payments.png" alt="BI Publisher Project">
-      <h4>BI Publisher Report – Supplier Payments</h4>
-      <p>Custom BI Publisher report for supplier invoices and payments, with filters and scheduling.</p>
-      <div class="project-links">
-        <a href="https://your-demo-link.com" target="_blank">🔗 Demo</a>
-        <a href="https://github.com/Enas-Khaled/bi-supplier-payments" target="_blank">📂 Code</a>
-        <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">🎥 Video</a>
-      </div>
-    </div>
--->
-  </div>
-
-  <!-- View More Button -->
-  <div class="view-more-container">
-    <button id="viewMoreProjectsBtn" onclick="toggleProjects()">View More</button>
-  </div>  
-</section>
-
-
-<section id="certificates">
-  <h2>Certifications & Professional Training</h2>
-  <div class="cert-grid">
-    <!-- Certificate 0 -->
-    <div class="cert-card" onclick="openModal(0)">
-      <img src="assets/global_logo.jpg" alt="Global Academy Logo">
-      <h3>Oracle Fusion Cloud Development Training - 2025</h3>
-      <p>Click to View</p>
-    </div>
-    
-    <!-- Certificate 1 -->
-    <div class="cert-card" onclick="openModal(1)">
-      <img src="assets/oic_logo.jpg" alt="Oracle OIC Logo">
-      <h3>Oracle Cloud Infrastructure 2025 Application Integration Professional</h3>
-      <p>Click to View</p>
-    </div>
-    <!-- Certificate 2 -->
-    <div class="cert-card" onclick="openModal(2)">
-      <img src="assets/vbcs.jpg" alt="Oracle vbcs Logo">
-      <h3>Oracle Redwood Application 2025 Certified Developer Associate</h3>
-      <p>Click to View</p>
-    </div>
-
-    <!-- Certificate 3 -->
-    <div class="cert-card extra-cert" onclick="openModal(3)">
-      <img src="assets/oracle-logo.png" alt="Oracle Logo">
-      <h3>Oracle Cloud Infrastructure Certified Foundations Associate - 2025</h3>
-      <p>Click to View</p>
-    </div>
-
-    <!-- Certificate 4 -->
-    <div class="cert-card extra-cert" onclick="openModal(4)">
-      <img src="assets/oracle-logo.png" alt="Oracle Logo">
-      <h3>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
-      <p>Click to View</p>
-    </div>
-
-      <!-- Certificate 5 -->
-    <div class="cert-card extra-cert" onclick="openModal(5)">
-      <img src="assets/apexLogo.jpg" alt="Oracle APEX Logo">
-      <h3>	Oracle APEX Developer Professional - 2025</h3>
-      <p>Click to View</p>
-    </div>
-    
-    <!-- Certificate 6 -->
-    <div class="cert-card extra-cert" onclick="openModal(6)">
-      <img src="assets/next.jpeg" alt="Next Academy Logo">
-      <h3>Oracle Fusion Technical Consultant Training - 2024</h3>
-      <p>Click to View</p>
-    </div>
-
-    <!-- Certificate 7 -->
-    <div class="cert-card extra-cert" onclick="openModal(7)">
-      <img src="assets/alx-logo.jpeg" alt="ALX Logo">
-      <h3>12 Month ALX Software Engineering Program - 2024</h3>
-      <p>Click to View</p>
-    </div>
-    <!-- Certificate 8 -->
-    <div class="cert-card extra-cert" onclick="openModal(8)">
-      <img src="assets/udacity-logo1.png" alt="udacity-logo">
-      <h3>Front-End NanoDegree Program - 2023</h3>
-      <p>Click to View</p>
-    </div>
-    <!-- Certificate 9 -->
-    <div class="cert-card extra-cert" onclick="openModal(9)">
-      <img src="assets/udacity-logo1.png" alt="udacity-logo">
-      <h3>Full Stack Web Developer Nanodegree Program - 2019</h3>
-      <p>Click to View</p>
-    </div>
-  </div>
-  <!-- View More Button -->
-  <div class="view-more-container">
-    <button id="viewMoreBtn" onclick="toggleCertificates()">View More</button>
-  </div>
-</section>
-
-<!-- Modal -->
-<div id="certModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="certImage">
-  <div id="certCaption" class="caption"></div>
-  <a class="prev" onclick="changeCert(-1)">&#10094;</a>
-  <a class="next" onclick="changeCert(1)">&#10095;</a>
-</div>
-    
-
-
-<footer>
-  <div class="footer-content">
-    <p>© <script>document.write(new Date().getFullYear())</script> Enas Khaled. All rights reserved.</p>
-    <div class="social-links">
-      <a href="https://github.com/Enas-Khaled" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/enas-khaled/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:enas.ah.khaled@gmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
-  </div>
-</footer>
-
-
+  <footer><div class="footer-content"><div><a class="footer-brand" href="#home">Enas Khaled</a><p>Oracle Fusion Technical Consultant</p></div><p>© <span id="currentYear"></span> Enas Khaled. All rights reserved.</p><div class="social-links" aria-label="Social links"><a href="https://github.com/Enas-Khaled" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/enas-khaled/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a><a href="mailto:enas.ah.khaled@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a></div></div></footer>
   <script src="script.js"></script>
-    <script>
- const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav-menu");
-const navLinks = document.querySelectorAll(".nav-menu a");
-
-// Toggle menu on button click
-menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("show");
-});
-
-// Close menu when a link is clicked
-navLinks.forEach(link => {
-  link.addEventListener("click", () => {
-    nav.classList.remove("show");
-  });
-});
-
-
-</script>
-<script>
-  const certificates = [
-    {
-    img: "assets/global.png",
-    caption: "Oracle Fusion Cloud Development Training – 2025",
-  },
-    {
-    img: "assets/integration.png",
-    caption: "Oracle Cloud Infrastructure Application Integration Professional – 2025",
-  },
-    {
-    img: "assets/Redwood.png",
-    caption: "	Oracle Redwood Application 2025 Certified Developer Associate - 2025",
-  }
-    ,
-  {
-    img: "assets/OCI.png",
-    caption: "Oracle Cloud Infrastructure Certified Foundations Associate - 2025",
-  }
-    ,
-    {
-    img: "assets/OCI_AI.png",
-    caption: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
-  }
-    ,
-    {
-    img: "assets/APEX.png",
-    caption: "Oracle APEX Cloud Developer Certified Professional - 2025",
-  },
-  {
-    img: "assets/Next_FTC-1.png",
-    caption: "Oracle Fusion Technical Consultant Training – 2024",
-  },
-  {
-    img: "assets/alx_software.png",
-    caption: "	12 Month ALX Software Engineering Program  - 2024",
-  },
-  {
-    img: "assets/Front-end NanoDegree.png ",
-    caption: "	Front-End NanoDegree - 2023",
-  }
-    ,
-  {
-    img: "assets/Full Stack Web Developer Nanodegree Program_2019_udacity.png",
-    caption: "	Full Stack Web Developer Nanodegree Program - 2019",
-  }
-];
-
-  let currentCertIndex = 0;
-
-  function openModal(index) {
-    currentCertIndex = index;
-    document.getElementById("certModal").style.display = "block";
-    updateCertDisplay();
-  }
-
-  function closeModal() {
-    document.getElementById("certModal").style.display = "none";
-  }
-
-  function changeCert(direction) {
-    currentCertIndex += direction;
-
-    if (currentCertIndex < 0) {
-      currentCertIndex = certificates.length - 1;
-    } else if (currentCertIndex >= certificates.length) {
-      currentCertIndex = 0;
-    }
-
-    updateCertDisplay();
-  }
-
-  function updateCertDisplay() {
-  const cert = certificates[currentCertIndex];
-  document.getElementById("certImage").src = cert.img;
-
-  const captionElement = document.getElementById("certCaption");
-  if (cert.link) {
-    captionElement.innerHTML = `
-      <a href="${cert.link}" target="_blank" style="color:#58a6ff; text-decoration:none; display:flex; align-items:center; gap:6px;">
-        ${cert.caption} <span style="font-size:1rem;">🔗</span>
-      </a>`;
-  } else {
-    captionElement.innerText = cert.caption;
-  }
-}
-
-
-
-  // Close modal if user clicks outside the image
-  window.onclick = function(event) {
-    const modal = document.getElementById("certModal");
-    if (event.target === modal) {
-      closeModal();
-    }
-  }
-
-  // Keyboard navigation
-  document.addEventListener("keydown", function(event) {
-    const modal = document.getElementById("certModal");
-    if (modal.style.display === "block") {
-      if (event.key === "ArrowLeft") {
-        changeCert(-1); // Left arrow
-      } else if (event.key === "ArrowRight") {
-        changeCert(1); // Right arrow
-      } else if (event.key === "Escape") {
-        closeModal(); // ESC key
-      }
-    }
-  });
-</script>
-
-  </div>
 </body>
 </html>
