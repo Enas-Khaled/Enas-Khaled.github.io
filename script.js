@@ -203,34 +203,69 @@ function initializeModal() {
   });
 }
 
+function initializeScrollSpy() {
+  if (!("IntersectionObserver" in window)) return;
+
+  const links = Array.from(document.querySelectorAll(".nav-menu a"));
+  const linkById = new Map(
+    links.map((link) => [link.getAttribute("href").slice(1), link])
+  );
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        links.forEach((link) => link.removeAttribute("aria-current"));
+        linkById.get(entry.target.id)?.setAttribute("aria-current", "true");
+      });
+    },
+    { rootMargin: "-40% 0px -55% 0px" }
+  );
+
+  linkById.forEach((_, id) => {
+    const section = document.getElementById(id);
+    if (section) observer.observe(section);
+  });
+}
+
+function warnAboutPlaceholders() {
+  const count = document.querySelectorAll(".fill").length;
+
+  if (count > 0) {
+    console.warn(
+      `Portfolio: ${count} placeholder value(s) still use class="fill". Replace them with real figures before publishing.`
+    );
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const setMenu = initializeNavigation();
 
   initializeModal();
+  initializeScrollSpy();
+  warnAboutPlaceholders();
 
-  const viewMoreProjectsBtn = document.getElementById("viewMoreProjectsBtn");
-  if (viewMoreProjectsBtn) {
-    viewMoreProjectsBtn.addEventListener("click", toggleProjects);
-  }
+  document
+    .getElementById("viewMoreProjectsBtn")
+    .addEventListener("click", toggleProjects);
 
-  const viewMoreBtn = document.getElementById("viewMoreBtn");
-  if (viewMoreBtn) {
-    viewMoreBtn.addEventListener("click", toggleCertificates);
-  }
+  document
+    .getElementById("viewMoreBtn")
+    .addEventListener("click", toggleCertificates);
 
-  const yearEl = document.getElementById("currentYear");
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+  document.getElementById("currentYear").textContent =
+    new Date().getFullYear();
 
   document.addEventListener("keydown", (event) => {
     const modal = document.getElementById("certModal");
-    const isModalOpen = modal && modal.classList.contains("is-open");
+    const isModalOpen = modal.classList.contains("is-open");
 
     if (event.key === "Escape") {
       if (isModalOpen) {
         closeModal();
       }
+
       setMenu(false);
     }
 
