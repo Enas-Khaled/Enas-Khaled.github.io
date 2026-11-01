@@ -1,95 +1,18 @@
 const certificates = [
-  {
-    img: "assets/global.png",
-    caption: "Oracle Fusion Cloud Development Training — 2025",
-  },
-  {
-    img: "assets/integration.png",
-    caption:
-      "Oracle Cloud Infrastructure Application Integration Professional — 2025",
-  },
-  {
-    img: "assets/Redwood.png",
-    caption:
-      "Oracle Redwood Application Certified Developer Associate — 2025",
-  },
-  {
-    img: "assets/OCI.png",
-    caption:
-      "Oracle Cloud Infrastructure Certified Foundations Associate — 2025",
-  },
-  {
-    img: "assets/OCI_AI.png",
-    caption:
-      "Oracle Cloud Infrastructure Certified AI Foundations Associate — 2025",
-  },
-  {
-    img: "assets/APEX.png",
-    caption: "Oracle APEX Developer Professional — 2025",
-  },
-  {
-    img: "assets/Next_FTC-1.png",
-    caption: "Oracle Fusion Technical Consultant Training — 2024",
-  },
-  {
-    img: "assets/alx_software.png",
-    caption: "12-Month ALX Software Engineering Program — 2024",
-  },
-  {
-    img: "assets/Front-end NanoDegree.png",
-    caption: "Front-End Nanodegree Program — 2023",
-  },
-  {
-    img: "assets/Full Stack Web Developer Nanodegree Program_2019_udacity.png",
-    caption: "Full Stack Web Developer Nanodegree Program — 2019",
-  },
+  { img: "assets/global.png", caption: "Oracle Fusion Cloud Development Training — 2025" },
+  { img: "assets/integration.png", caption: "Oracle Cloud Infrastructure Application Integration Professional — 2025" },
+  { img: "assets/Redwood.png", caption: "Oracle Redwood Application Certified Developer Associate — 2025" },
+  { img: "assets/OCI.png", caption: "Oracle Cloud Infrastructure Certified Foundations Associate — 2025" },
+  { img: "assets/OCI_AI.png", caption: "Oracle Cloud Infrastructure Certified AI Foundations Associate — 2025" },
+  { img: "assets/APEX.png", caption: "Oracle APEX Developer Professional — 2025" },
+  { img: "assets/Next_FTC-1.png", caption: "Oracle Fusion Technical Consultant Training — 2024" },
+  { img: "assets/alx_software.png", caption: "12-Month ALX Software Engineering Program — 2024" },
+  { img: "assets/Front-end NanoDegree.png", caption: "Front-End Nanodegree Program — 2023" },
+  { img: "assets/Full Stack Web Developer Nanodegree Program_2019_udacity.png", caption: "Full Stack Web Developer Nanodegree Program — 2019" },
 ];
 
 let currentCertIndex = 0;
 let lastFocusedElement = null;
-
-function setExpandedItems(
-  selector,
-  button,
-  expanded,
-  moreLabel,
-  lessLabel
-) {
-  document.querySelectorAll(selector).forEach((item) => {
-    item.hidden = !expanded;
-  });
-
-  button.setAttribute("aria-expanded", String(expanded));
-  button.childNodes[0].nodeValue = expanded
-    ? `${lessLabel} `
-    : `${moreLabel} `;
-}
-
-function toggleProjects() {
-  const button = document.getElementById("viewMoreProjectsBtn");
-  const expanded = button.getAttribute("aria-expanded") !== "true";
-
-  setExpandedItems(
-    ".extra-project",
-    button,
-    expanded,
-    "View more implementation work",
-    "View less implementation work"
-  );
-}
-
-function toggleCertificates() {
-  const button = document.getElementById("viewMoreBtn");
-  const expanded = button.getAttribute("aria-expanded") !== "true";
-
-  setExpandedItems(
-    ".extra-cert",
-    button,
-    expanded,
-    "View more credentials",
-    "View fewer credentials"
-  );
-}
 
 function updateCertDisplay() {
   const cert = certificates[currentCertIndex];
@@ -97,7 +20,6 @@ function updateCertDisplay() {
 
   image.src = cert.img;
   image.alt = `${cert.caption} certificate`;
-
   document.getElementById("certCaption").textContent = cert.caption;
 }
 
@@ -106,13 +28,11 @@ function openModal(index) {
 
   currentCertIndex = index;
   lastFocusedElement = document.activeElement;
-
   updateCertDisplay();
 
   modal.classList.add("is-open");
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-open");
-
   modal.querySelector(".modal-close").focus();
 }
 
@@ -130,9 +50,7 @@ function closeModal() {
 
 function changeCert(direction) {
   currentCertIndex =
-    (currentCertIndex + direction + certificates.length) %
-    certificates.length;
-
+    (currentCertIndex + direction + certificates.length) % certificates.length;
   updateCertDisplay();
 }
 
@@ -143,23 +61,13 @@ function initializeNavigation() {
 
   function setMenu(open) {
     nav.classList.toggle("show", open);
-
     menuToggle.setAttribute("aria-expanded", String(open));
-    menuToggle.setAttribute(
-      "aria-label",
-      open ? "Close navigation" : "Open navigation"
-    );
-
-    menuIcon.className = open
-      ? "fa-solid fa-xmark"
-      : "fa-solid fa-bars";
+    menuToggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+    menuIcon.className = open ? "fa-solid fa-xmark" : "fa-solid fa-bars";
   }
 
   menuToggle.addEventListener("click", () => {
-    const shouldOpen =
-      menuToggle.getAttribute("aria-expanded") !== "true";
-
-    setMenu(shouldOpen);
+    setMenu(menuToggle.getAttribute("aria-expanded") !== "true");
   });
 
   document.querySelectorAll(".nav-menu a").forEach((link) => {
@@ -178,23 +86,13 @@ function initializeNavigation() {
 function initializeModal() {
   const modal = document.getElementById("certModal");
 
-  document.querySelectorAll("[data-cert-index]").forEach((card) => {
-    card.addEventListener("click", () => {
-      openModal(Number(card.dataset.certIndex));
-    });
+  document.querySelectorAll("[data-cert-index]").forEach((item) => {
+    item.addEventListener("click", () => openModal(Number(item.dataset.certIndex)));
   });
 
-  modal
-    .querySelector(".modal-close")
-    .addEventListener("click", closeModal);
-
-  modal
-    .querySelector(".prev")
-    .addEventListener("click", () => changeCert(-1));
-
-  modal
-    .querySelector(".next")
-    .addEventListener("click", () => changeCert(1));
+  modal.querySelector(".modal-close").addEventListener("click", closeModal);
+  modal.querySelector(".prev").addEventListener("click", () => changeCert(-1));
+  modal.querySelector(".next").addEventListener("click", () => changeCert(1));
 
   modal.addEventListener("click", (event) => {
     if (event.target === modal) {
@@ -203,59 +101,11 @@ function initializeModal() {
   });
 }
 
-function initializeScrollSpy() {
-  if (!("IntersectionObserver" in window)) return;
-
-  const links = Array.from(document.querySelectorAll(".nav-menu a"));
-  const linkById = new Map(
-    links.map((link) => [link.getAttribute("href").slice(1), link])
-  );
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-
-        links.forEach((link) => link.removeAttribute("aria-current"));
-        linkById.get(entry.target.id)?.setAttribute("aria-current", "true");
-      });
-    },
-    { rootMargin: "-40% 0px -55% 0px" }
-  );
-
-  linkById.forEach((_, id) => {
-    const section = document.getElementById(id);
-    if (section) observer.observe(section);
-  });
-}
-
-function warnAboutPlaceholders() {
-  const count = document.querySelectorAll(".fill").length;
-
-  if (count > 0) {
-    console.warn(
-      `Portfolio: ${count} placeholder value(s) still use class="fill". Replace them with real figures before publishing.`
-    );
-  }
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   const setMenu = initializeNavigation();
 
   initializeModal();
-  initializeScrollSpy();
-  warnAboutPlaceholders();
-
-  document
-    .getElementById("viewMoreProjectsBtn")
-    .addEventListener("click", toggleProjects);
-
-  document
-    .getElementById("viewMoreBtn")
-    .addEventListener("click", toggleCertificates);
-
-  document.getElementById("currentYear").textContent =
-    new Date().getFullYear();
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
 
   document.addEventListener("keydown", (event) => {
     const modal = document.getElementById("certModal");
@@ -265,16 +115,34 @@ document.addEventListener("DOMContentLoaded", () => {
       if (isModalOpen) {
         closeModal();
       }
-
       setMenu(false);
     }
 
-    if (isModalOpen && event.key === "ArrowLeft") {
+    if (!isModalOpen) {
+      return;
+    }
+
+    if (event.key === "ArrowLeft") {
       changeCert(-1);
     }
 
-    if (isModalOpen && event.key === "ArrowRight") {
+    if (event.key === "ArrowRight") {
       changeCert(1);
+    }
+
+    // Keep keyboard focus inside the open dialog.
+    if (event.key === "Tab") {
+      const focusable = modal.querySelectorAll("button");
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     }
   });
 });
