@@ -208,26 +208,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initializeModal();
 
-  document
-    .getElementById("viewMoreProjectsBtn")
-    .addEventListener("click", toggleProjects);
+  const viewMoreProjectsBtn = document.getElementById("viewMoreProjectsBtn");
+  if (viewMoreProjectsBtn) {
+    viewMoreProjectsBtn.addEventListener("click", toggleProjects);
+  }
 
-  document
-    .getElementById("viewMoreBtn")
-    .addEventListener("click", toggleCertificates);
+  const viewMoreBtn = document.getElementById("viewMoreBtn");
+  if (viewMoreBtn) {
+    viewMoreBtn.addEventListener("click", toggleCertificates);
+  }
 
-  document.getElementById("currentYear").textContent =
-    new Date().getFullYear();
+  const yearEl = document.getElementById("currentYear");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
 
   document.addEventListener("keydown", (event) => {
     const modal = document.getElementById("certModal");
-    const isModalOpen = modal.classList.contains("is-open");
+    const isModalOpen = modal && modal.classList.contains("is-open");
 
     if (event.key === "Escape") {
       if (isModalOpen) {
         closeModal();
       }
-
       setMenu(false);
     }
 
