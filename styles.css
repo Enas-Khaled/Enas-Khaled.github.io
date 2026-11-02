@@ -263,5 +263,18 @@ body.certificate-open{overflow:hidden}
  header nav a,header nav a:nth-child(3),header nav a[href="#experience"]{display:block;padding:12px 5px;font-size:14px;min-height:44px;border-bottom:1px solid var(--line)}
  header nav a:last-child{border-bottom:0}
  .menu-toggle:focus-visible{outline:2px solid #77914f;outline-offset:4px}
+ /* Make section labels larger and bolder */
+.section-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* Keep the EK icon visible on mobile */
+@media (max-width: 480px) {
+  .brand span {
+    display: inline-grid;
+  }
+}
 }
 @media(prefers-reduced-motion:reduce){.menu-toggle span{transition:none}}
