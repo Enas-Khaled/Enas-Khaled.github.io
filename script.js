@@ -39,3 +39,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (opener) opener.focus();
   });
 });
+
+// Mobile menu: tap toggle, choose a link, click outside, or press Escape to close.
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('main-navigation');
+  const setOpen = open => {
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    menu.classList.toggle('is-open', open);
+  };
+  toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {setOpen(false);toggle.focus();}
+  });
+  document.addEventListener('click', event => {if (!event.target.closest('header')) setOpen(false);});
+  window.matchMedia('(max-width:800px)').addEventListener('change', () => setOpen(false));
+});
